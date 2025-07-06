@@ -86,12 +86,28 @@ A modern, responsive personal portfolio website showcasing my skills, education,
 - Professional card design with backdrop blur effects
 
 ### 6. **Portfolio Projects**
-- 4 capstone projects with live links and enhanced styling:
-  - **EaseTalk ISL Platform**: Sign language learning platform
-  - **News Website**: Current events and news
-  - **Tindog**: Tinder for dogs (fun project)
-  - **Sketching Website**: Creative drawing platform
-- Professional project cards with hover effects
+Organized into two professional categories with enhanced descriptions:
+
+#### **Modern Web Applications**
+- **Book Store Management**: A modern, responsive book store management application built with React, TypeScript, and Tailwind CSS
+- **Trip List Maker**: A simple and intuitive React app to help you create, manage, and track your packing list for any trip
+- **Tip Calculator**: A clean and functional tip calculator built with React featuring a well-organized component structure
+
+#### **Frontend Development Projects**
+- **EaseTalk ISL Platform**: Sign language learning platform with interactive features
+- **Profile Website**: Personal profile showcase with responsive design
+- **GameHub**: Gaming platform with interactive game elements
+- **JavaScript Projects Hub**: Collection of JavaScript mini-projects and utilities
+- **News Website**: Current events and news platform with clean design
+- **Friends Bucket**: Social networking platform for friends
+- **Landing Page**: Modern landing page with engaging user interface
+- **Resume Builder**: Professional resume creation tool
+- **Personal Website**: Professional portfolio website with modern design and animations
+- **Simple Arithmetic Operations**: Basic calculator with arithmetic operations
+- **SGPI Journey**: Academic journey tracking and visualization tool
+- **Sketching Website**: Creative drawing and sketching platform
+- **Tindog**: Fun Tinder-style app for dogs with modern UI
+- **Recipe Panipuri**: Recipe showcase for traditional Indian snack
 
 ### 7. **Contact Section**
 - Email: Nikdocuments12@gmail.com

@@ -26,7 +26,13 @@
                 <li><a href="#profile" class="nav-link">About</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-dropdown">
+                    <a href="#projects-section" class="nav-link">Projects <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#modern-web-apps" class="dropdown-link">Modern Web Apps</a></li>
+                        <li><a href="#frontend-projects" class="dropdown-link">Frontend Projects</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -72,27 +78,65 @@
             <div class="skills">
                 <img src="coding.gif" alt="Programming and coding animation">
                 <h3>Programming Languages</h3>
-                <p>Python, JavaScript, HTML, CSS</p>
+                <p>JavaScript, TypeScript, Python, HTML5, CSS3</p>
             </div>
             <div class="skills">
                 <img src="database.gif" alt="Database management animation">
-                <h3>Databases</h3>
-                <p>SQL, MongoDB</p>
+                <h3>Frameworks & Libraries</h3>
+                <p>React.js, Tailwind CSS, Bootstrap, jQuery</p>
             </div>
             <div class="skills others">
                 <img src="others.gif" alt="Additional skills animation">
-                <h3>Others</h3>
-                <p>Networking, Team Building, Communication</p>
+                <h3>Tools & Technologies</h3>
+                <p>Git, GitHub Pages, Responsive Design, UI/UX Design, Data Science</p>
             </div>
         </div>
     </section>
 
     <section class="leadership text-center">
         <h2>Leadership Roles</h2>
-        <ul class="list">
-            <li>Public Relation Head, IEEE-TCET Student Branch</li>
-            <li>Junior Council, NSS-TCET</li>
-        </ul>
+        <div class="leadership-grid">
+            
+            
+            <div class="leadership-card" onclick="toggleRoleDescription(this)">
+                <div class="role-header">
+                    <div class="role-info">
+                        <h3>Junior Council</h3>
+                        <p class="organization">NSS-TCET</p>
+                        <p class="duration">Aug'22 - July'23</p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
+                <div class="role-description">
+                    <p>Leading, Coordinating and organising Social Events in NSS including:</p>
+                    <ul class="role-highlights">
+                        <li>Community Service Initiatives</li>
+                        <li>Blood Donation Camps</li>
+                        <li>Social Awareness Programs</li>
+                        <li>Volunteer Coordination</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="leadership-card" onclick="toggleRoleDescription(this)">
+                <div class="role-header">
+                    <div class="role-info">
+                        <h3>Public Relation Head</h3>
+                        <p class="organization">IEEE-TCET Student Branch, IEEE MTTS, IEEE-GRSS Student Chapter</p>
+                        <p class="duration">Aug'23 - July'24</p>
+                    </div>
+                    <div class="expand-icon">+</div>
+                </div>
+                <div class="role-description">
+                    <p>Leading a Core team and a Working Committee for organizing various Technical Events including:</p>
+                    <ul class="role-highlights">
+                        <li>Seminars & Technical Talks</li>
+                        <li>Webinars & Workshops</li>
+                        <li>Tech-Fest & Hackathon</li>
+                        <li>Industry Collaboration Events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="certifications text-center">
@@ -102,136 +146,136 @@
         </ul>
     </section>
 
-    <section id="projects" class="projects-section">
+    <!-- Projects Overview Section -->
+    <!-- Projects Overview Section -->
+    <section id="projects-section" class="projects-section">
         <h2>My Projects</h2>
-        <p class="projects-intro">Explore my diverse portfolio of projects showcasing different technologies and skills:
-        </p>
+        <p class="projects-intro">Explore my diverse portfolio of projects showcasing different technologies and skills:</p>
+    </section>
 
-        <!-- Modern Web Applications -->
-        <div class="project-category">
-            <h3>Modern Web Applications</h3>
-            <div class="projects-grid">
+    <!-- Modern Web Applications Section -->
+    <section id="modern-web-apps" class="projects-section">
+        <h2>Modern Web Applications</h2>
+        <p class="projects-intro">React-based applications with modern frameworks and technologies:</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>Book Store Management</h4>
+                <p>A modern, responsive book store management application built with React, TypeScript, and Tailwind CSS.</p>
+                <a href="https://nikhil2004nk.github.io/book-store-mng/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
 
-                <div class="project-card">
-                    <h4>Book Store Management</h4>
-                    <p>A modern, responsive book store management application built with React, TypeScript, and Tailwind CSS.</p>
-                    <a href="https://nikhil2004nk.github.io/book-store-mng/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
+            <div class="project-card">
+                <h4>Trip List Maker</h4>
+                <p>A simple and intuitive React app to help you create, manage, and track your packing list for any trip. </p>
+                <a href="https://nikhil2004nk.github.io/Trip-list-maker/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
 
-                <div class="project-card">
-                    <h4>Trip List Maker</h4>
-                    <p>A simple and intuitive React app to help you create, manage, and track your packing list for any trip. </p>
-                    <a href="https://nikhil2004nk.github.io/Trip-list-maker/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>Tip Calculator</h4>
-                    <p>A clean and functional tip calculator built with React featuring a well-organized component structure.</p>
-                    <a href="https://nikhil2004nk.github.io/tip-calculator/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-
-                
+            <div class="project-card">
+                <h4>Tip Calculator</h4>
+                <p>A clean and functional tip calculator built with React featuring a well-organized component structure.</p>
+                <a href="https://nikhil2004nk.github.io/tip-calculator/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
             </div>
         </div>
+    </section>
 
-        <!-- Frontend Development Projects -->
-        <div class="project-category">
-            <h3>Frontend Development Projects</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>EaseTalk ISL Platform</h4>
-                    <p>Built during a 24-hour hackathon, this frontend application leverages AI-powered gesture recognition to provide real-time sign language translation and interactive learning experiences.</p>
-                    <a href="https://nikhil2004nk.github.io/EaseTalk-ISL-Platform-FRONTEND-/" class="project-link"
-                        target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>Profile Website</h4>
-                    <p>A modern, interactive personal portfolio website showcasing my skills, projects, and professional experience with engaging animations and smooth user interactions.</p>
-                    <a href="https://nikhil2004nk.github.io/Profile-website/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                
-                <div class="project-card">
-                    <h4>GameHub</h4>
-                    <p>Gaming platform with interactive game elements</p>
-                    <a href="https://nikhil2004nk.github.io/GameHub/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>JavaScript Projects Hub</h4>
-                    <p>Collection of JavaScript mini-projects and utilities</p>
-                    <a href="https://nikhil2004nk.github.io/JavaScript-Projects-Hub/" class="project-link"
-                        target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>News Website</h4>
-                    <p>Current events and news platform with clean design</p>
-                    <a href="https://nikhil2004nk.github.io/News-website/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>Friends Bucket</h4>
-                    <p>Social networking platform for friends</p>
-                    <a href="https://nikhil2004nk.github.io/Friends-bucket/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>Landing Page</h4>
-                    <p>Modern landing page with engaging user interface</p>
-                    <a href="https://nikhil2004nk.github.io/Landing-page/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>Resume Builder</h4>
-                    <p>Professional resume creation tool</p>
-                    <a href="https://nikhil2004nk.github.io/Resume/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>Personal Website</h4>
-                    <p>A modern design and animations, responsive personal portfolio website showcasing my skills, education, projects, and professional experience.
-            </p>
-                    <a href="https://nikhil2004nk.github.io/personal-website/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h4>Simple Arithmetic Operations</h4>
-                    <p>Basic calculator with arithmetic operations</p>
-                    <a href="https://nikhil2004nk.github.io/simple-arithmetic-operation/" class="project-link"
-                        target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
+    <!-- Frontend Development Projects Section -->
+    <section id="frontend-projects" class="projects-section">
+        <h2>Frontend Development Projects</h2>
+        <p class="projects-intro">HTML, CSS, and JavaScript projects with modern design and functionality:</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>EaseTalk ISL Platform</h4>
+                <p>Built during a 24-hour hackathon, this frontend application leverages AI-powered gesture recognition to provide real-time sign language translation and interactive learning experiences.</p>
+                <a href="https://nikhil2004nk.github.io/EaseTalk-ISL-Platform-FRONTEND-/" class="project-link"
+                    target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Profile Website</h4>
+                <p>A modern, interactive personal portfolio website showcasing my skills, projects, and professional experience with engaging animations and smooth user interactions.</p>
+                <a href="https://nikhil2004nk.github.io/Profile-website/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            
+            <div class="project-card">
+                <h4>GameHub</h4>
+                <p>Gaming platform with interactive game elements</p>
+                <a href="https://nikhil2004nk.github.io/GameHub/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>JavaScript Projects Hub</h4>
+                <p>Collection of JavaScript mini-projects and utilities</p>
+                <a href="https://nikhil2004nk.github.io/JavaScript-Projects-Hub/" class="project-link"
+                    target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>News Website</h4>
+                <p>Current events and news platform with clean design</p>
+                <a href="https://nikhil2004nk.github.io/News-website/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Friends Bucket</h4>
+                <p>Social networking platform for friends</p>
+                <a href="https://nikhil2004nk.github.io/Friends-bucket/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Landing Page</h4>
+                <p>Modern landing page with engaging user interface</p>
+                <a href="https://nikhil2004nk.github.io/Landing-page/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Resume Builder</h4>
+                <p>Professional resume creation tool</p>
+                <a href="https://nikhil2004nk.github.io/Resume/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Personal Website</h4>
+                <p>A modern design and animations, responsive personal portfolio website showcasing my skills, education, projects, and professional experience.</p>
+                <a href="https://nikhil2004nk.github.io/personal-website/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Simple Arithmetic Operations</h4>
+                <p>Basic calculator with arithmetic operations</p>
+                <a href="https://nikhil2004nk.github.io/simple-arithmetic-operation/" class="project-link"
+                    target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
 
-                <div class="project-card">
-                    <h4>SGPI Journey</h4>
-                    <p>Academic journey tracking and visualization tool</p>
-                    <a href="https://nikhil2004nk.github.io/SGPI-Journey/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
+            <div class="project-card">
+                <h4>SGPI Journey</h4>
+                <p>Academic journey tracking and visualization tool</p>
+                <a href="https://nikhil2004nk.github.io/SGPI-Journey/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
 
-                <div class="project-card">
-                    <h4>Sketching Website</h4>
-                    <p>Creative drawing and sketching platform</p>
-                    <a href="https://nikhil2004nk.github.io/sketching-website/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
+            <div class="project-card">
+                <h4>Sketching Website</h4>
+                <p>Creative drawing and sketching platform</p>
+                <a href="https://nikhil2004nk.github.io/sketching-website/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
 
-                <div class="project-card">
-                    <h4>Tindog</h4>
-                    <p>Fun Tinder-style app for dogs with modern UI</p>
-                    <a href="https://nikhil2004nk.github.io/Tindog/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
+            <div class="project-card">
+                <h4>Tindog</h4>
+                <p>Fun Tinder-style app for dogs with modern UI</p>
+                <a href="https://nikhil2004nk.github.io/Tindog/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
+            </div>
 
-                <div class="project-card">
-                    <h4>Recipe Panipuri</h4>
-                    <p>Recipe showcase for traditional Indian snack</p>
-                    <a href="https://nikhil2004nk.github.io/recipe-panipuri/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View Project</a>
-                </div>
-
+            <div class="project-card">
+                <h4>Recipe Panipuri</h4>
+                <p>Recipe showcase for traditional Indian snack</p>
+                <a href="https://nikhil2004nk.github.io/recipe-panipuri/" class="project-link" target="_blank"
+                    rel="noopener noreferrer">View Project</a>
             </div>
         </div>
     </section>
@@ -311,6 +355,8 @@
             navMenu.classList.remove('active');
         }));
 
+
+
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 50) {
@@ -342,20 +388,11 @@
             });
         });
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+        // Close mobile menu when clicking on any navigation link
+        document.querySelectorAll('.nav-link, .dropdown-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
@@ -364,6 +401,20 @@
                 navMenu.classList.remove('active');
             }
         });
+
+        // Leadership Role Description Toggle Function
+        function toggleRoleDescription(card) {
+            // Close all other expanded cards
+            const allCards = document.querySelectorAll('.leadership-card');
+            allCards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.classList.remove('expanded');
+                }
+            });
+            
+            // Toggle the clicked card
+            card.classList.toggle('expanded');
+        }
     </script>
 </body>
 
